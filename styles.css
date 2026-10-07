@@ -79,7 +79,8 @@ h1, h2, h3, p { margin-top: 0; }
 .photo-frame > img { width: 100%; height: 100%; object-fit: cover; border-radius: inherit; }
 .photo-frame::after { position: absolute; inset: 40% 0 0; border-radius: 0 0 13px 13px; background: linear-gradient(0deg, rgba(16, 48, 42, .42), transparent); content: ""; }
 .photo-sticker { position: absolute; z-index: 2; top: 51px; left: -27px; display: grid; width: 68px; height: 68px; place-items: center; background: var(--yellow); color: var(--green-dark); border-radius: 50%; font-size: 33px; transform: rotate(-12deg); }
-.photo-caption { position: absolute; z-index: 2; right: 21px; bottom: 19px; left: 20px; display: flex; align-items: center; gap: 12px; color: white; }
+.photo-caption { position: absolute; z-index: 2; right: 21px; bottom: 19px; left: 20px; display: flex; align-items: center; gap: 12px; color: white; text-decoration: none; }
+.photo-caption:hover strong, .photo-caption:focus-visible strong { text-decoration: underline; text-underline-offset: 3px; }
 .caption-icon { width: 39px; height: 39px; display: grid; place-items: center; background: rgba(255, 255, 255, .18); border: 1px solid rgba(255, 255, 255, .28); border-radius: 50%; font-size: 19px; }
 .photo-caption div { display: grid; line-height: 1.35; }
 .photo-caption strong { font-size: 16px; }
